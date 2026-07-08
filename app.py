@@ -90,8 +90,8 @@ def process_fact_check(document_text, api_key_input):
             config=types.GenerateContentConfig(
                 # Enable live Google Search grounding tool
                 tools=[types.Tool(google_search=types.GoogleSearch())],
-                temperature=0.1, # Low temperature for analytical consistency
-                response_mime_type="application/json" # Enforce strict JSON handling
+                temperature=0.1 # Low temperature for analytical consistency
+                
             )
         )
         
